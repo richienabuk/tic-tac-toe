@@ -117,14 +117,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void gamer1Wins() {
         gamer1Points++;
-        Toast.makeText(this, "Player 1 wins!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "1st Player wins!", Toast.LENGTH_SHORT).show();
         updatePointsText();
         resetBoard();
     }
 
     private void gamer2Wins() {
         gamer2Points++;
-        Toast.makeText(this, "Player 2 wins!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "2nd Player wins!", Toast.LENGTH_SHORT).show();
         updatePointsText();
         resetBoard();
     }
@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void updatePointsText() {
-        textViewPlayer1.setText("Player 1: " + gamer1Points);
-        textViewPlayer2.setText("Player 2: " + gamer2Points);
+        textViewPlayer1.setText("1st Player: " + gamer1Points);
+        textViewPlayer2.setText("2nd Player: " + gamer2Points);
     }
 
     private void resetBoard() {
