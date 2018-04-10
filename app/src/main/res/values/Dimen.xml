@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cell_right_margin">8dp</dimen>
+    <dimen name="cell_left_margin">8dp</dimen>
+    <dimen name="cell_top_margin">8dp</dimen>
+    <dimen name="cell_bottom_margin">8dp</dimen>
+</resources>
