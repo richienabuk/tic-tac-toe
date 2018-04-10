@@ -29,8 +29,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:textSize="60sp"/>
 
             <Button
                 android:id="@+id/cell_01"
@@ -42,8 +42,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/cell_02"
@@ -54,8 +54,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
         </LinearLayout>
 
@@ -74,8 +74,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/cell_11"
@@ -88,8 +88,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/cell_12"
@@ -101,8 +101,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
         </LinearLayout>
 
@@ -121,8 +121,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/cell_21"
@@ -135,8 +135,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/cell_22"
@@ -148,8 +148,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
                 android:freezesText="true"
-                android:textSize="60sp"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
 
         </LinearLayout>
     </LinearLayout>
@@ -157,35 +157,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="#f5f5f5"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
             <TextView
                 android:id="@+id/text_view_p1"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:freezesText="true"
-                android:layout_marginLeft="@dimen/cell_left_margin"
+                android:layout_marginBottom="@dimen/cell_bottom_margin"
                 android:layout_marginTop="@dimen/cell_top_margin"
+                android:layout_weight="1"
+                android:freezesText="true"
+                android:gravity="center"
                 android:text="Player 1: 0"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                />
 
             <TextView
                 android:id="@+id/text_view_p2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/text_view_p1"
-                android:freezesText="true"
-                android:text="Player 2: 0"
-                android:layout_marginLeft="@dimen/cell_left_margin"
+                android:layout_marginBottom="@dimen/cell_bottom_margin"
                 android:layout_marginTop="@dimen/cell_top_margin"
-                android:layout_alignParentRight="true"
-                android:textSize="30sp" />
+                android:layout_weight="1"
+                android:freezesText="true"
+                android:gravity="center"
+                android:text="Player 2: 0"
+                android:textSize="30sp"/>
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button_reset"
