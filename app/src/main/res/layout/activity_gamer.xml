@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#030506">
+        android:background="@color/boardBg">
 
         <Button
             android:id="@+id/cell_00"
@@ -21,7 +21,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size"/>
 
         <Button
@@ -34,7 +34,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
         <Button
@@ -46,7 +46,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
     </LinearLayout>
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#030506">
+        android:background="@color/boardBg">
 
         <Button
             android:id="@+id/cell_10"
@@ -67,7 +67,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
         <Button
@@ -81,7 +81,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
         <Button
@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
     </LinearLayout>
@@ -103,7 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#030506">
+        android:background="@color/boardBg">
 
         <Button
             android:id="@+id/cell_20"
@@ -115,7 +115,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
         <Button
@@ -129,7 +129,7 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
         <Button
@@ -142,10 +142,28 @@
             android:layout_weight="1"
             android:background="@drawable/tic_tac_toe_cell_xxxhdpi"
             android:freezesText="true"
-            android:textColor="#ffffff"
+            android:textColor="@color/whiteText"
             android:textSize="@dimen/cell_text_size" />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/player_turn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/turnBg"
+            android:freezesText="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/whiteText"
+            android:textSize="@dimen/text_size_25"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -160,7 +178,7 @@
             android:layout_marginTop="@dimen/cell_top_margin"
             android:layout_toLeftOf="@+id/text_view_p2"
             android:freezesText="true"
-            android:textSize="25sp" />
+            android:textSize="@dimen/text_size_25" />
 
         <TextView
             android:id="@+id/text_view_p2"
@@ -171,41 +189,19 @@
             android:layout_marginRight="@dimen/cell_right_margin"
             android:layout_marginTop="@dimen/cell_top_margin"
             android:freezesText="true"
-            android:textSize="25sp" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/player_turn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/cell_bottom_margin"
-            android:layout_marginTop="@dimen/cell_top_margin"
-            android:freezesText="true"
-
-
-            android:background="#FBAF3F"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textColor="#FFF"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:typeface="sans"/>
+            android:textSize="@dimen/text_size_25" />
     </RelativeLayout>
 
     <Button
         android:id="@+id/button_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:background="#F05A28"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/restart_game"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
+        android:textColor="@color/whiteText"
+        android:textSize="@dimen/text_size_25"
         android:textStyle="bold"
         android:typeface="sans" />
 

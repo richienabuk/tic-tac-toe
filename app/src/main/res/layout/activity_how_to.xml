@@ -10,12 +10,69 @@
         android:padding="@dimen/padding_20">
 
         <TextView
+            android:id="@+id/howToTop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is the instruction on how to play the tic-tac-toe game."
             android:layout_marginBottom="10dp"
             android:layout_marginTop="24dp"
+            android:text="@string/how_to_play_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/big_btn_size"
             />
+        <TextView
+            android:id="@+id/howToText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/howToTop"
+            android:layout_marginTop="14dp"
+            android:text="@string/how_to_play"
+            />
+        <TextView
+            android:id="@+id/howToWinTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/howToText"
+            android:layout_marginTop="24dp"
+            android:text="@string/how_to_win_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/big_btn_size"
+            />
+        <TextView
+            android:id="@+id/howToWin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/howToWinTop"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/cell_top_margin"
+            android:text="@string/how_to_win"
+            />
+        <Button
+            android:id="@+id/gamelaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/howToWin"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:onClick="GameLaunch"
+            android:padding="@dimen/padding_10"
+            android:text="@string/play_game"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/big_btn_size"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/gamelaunch"
+            android:layout_marginTop="50dp"
+            android:text="@string/culled_from"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary" />
 
     </RelativeLayout>
 </ScrollView>

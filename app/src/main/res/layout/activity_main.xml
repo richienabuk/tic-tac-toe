@@ -15,61 +15,61 @@
             android:id="@+id/top_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/game_name"
-            android:textAllCaps="true"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="56sp"
-            android:textColor="@color/colorPrimaryDark"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="24dp"
+            android:text="@string/game_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="56sp"
+            android:textStyle="bold"
             />
 
         <Button
             android:id="@+id/gamelaunch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/top_title"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="Play Game"
-            android:textSize="@dimen/big_btn_size"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/top_title"
-            android:onClick="GameLaunch"
             android:background="@color/colorPrimary"
+            android:onClick="GameLaunch"
+            android:padding="@dimen/padding_10"
+            android:text="@string/play_game"
             android:textColor="#ffffff"
-            android:padding="@dimen/padding_10"/>
+            android:textSize="@dimen/big_btn_size"/>
 
         <Button
             android:id="@+id/howto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/gamelaunch"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="How to Play"
-            android:textSize="@dimen/big_btn_size"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/gamelaunch"
-            android:onClick="HowTo"
             android:background="@color/colorPrimary"
+            android:onClick="HowTo"
+            android:padding="@dimen/padding_10"
+            android:text="@string/howtoplaybutton"
             android:textColor="#ffffff"
-            android:padding="@dimen/padding_10"/>
+            android:textSize="@dimen/big_btn_size"/>
 
         <Button
-            android:id="@+id/about"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:layout_below="@id/howto"
-            android:text="About"
-            android:textSize="@dimen/big_btn_size"
-            android:onClick="About"
             android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
-            android:textColor="#ffffff"
+            android:onClick="About"
             android:padding="@dimen/padding_10"
-            android:layout_marginBottom="24dp"/>
+            android:text="@string/about"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/big_btn_size"/>
+
     </RelativeLayout>
 
 </ScrollView>

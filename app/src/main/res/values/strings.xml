@@ -1,15 +1,35 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
-    <string name="title_activity_about">About</string>
+    <string name="about">About</string>
     <string name="game_name">Tic Tac Toe Game</string>
-    <string name="play_button_text">Play</string>
     <string name="ask_player1name_text">Enter the name of 1st Player:</string>
-    <string name="player1name_text_hint">Player 1</string>
+    <string name="player1name_text_hint">1st Player</string>
     <string name="ask_player2name_text">Enter the name of 2nd Player:</string>
-    <string name="player2name_text_hint">Player 2</string>
+    <string name="player2name_text_hint">2nd Player</string>
     <string name="playernames_submit_button">Start Game</string>
     <string name="restart_game">Restart Game</string>
-    <string name="blank_string" />
     <string name="player_2_default_name">2nd Player</string>
     <string name="player_1_default_name">1st Player</string>
+    <string name="how_to_play_title">How to Play tic-tac-toe</string>
+    <string name="how_to_win_title">How to Win tic-tac-toe</string>
+    <string name="how_to_play">This is the instruction on how to play the tic-tac-toe game.
+        \n1. The game is played on a grid that\'s 3 squares by 3 squares.
+        \n2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
+        \n3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+        \n4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+        \n\nTop-Left	Top-Center	Top-Right\n
+Middle-Left	Middle-Center	Middle-Right\n
+Bottom-Left	Bottom-Center	Bottom-Right</string>
+    <string name="how_to_win">
+        \n
+        To beat the Opponent (or at least tie), you need to make use of a little bit of strategy. \nStrategy means figuring out what you need to do to win.
+        Part of your strategy is trying to figure out how to get three Xs in a row. \nThe other part is trying to figure out how to stop the Opponent from getting three Os in a row.
+        \n\nAfter you put an X in a square, you start looking ahead. Where\'s the best place for your next X? You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row.\n\n
+        You also have to watch where the Opponent puts its O. That could change what you do next. If the Opponent gets two Os in a row, you have to put your next X in the last empty square in that row, or the Opponent will win. \n\nYou are forced to play in a particular square or lose the game.
+        If you always pay attention and look ahead, you\'ll never lose a game of Tic-Tac-Toe. You may not win, but at least you\'ll tie.</string>
+    <string name="play_game">Play Game</string>
+    <string name="culled_from">Text culled from exploratorium</string>
+    <string name="howtoplaybutton">How to Play</string>
+    <string name="creditText">Developed by:\nRichie Nabuk \nFor ALC: Beginner Android Dev</string>
+    <string name="creditButton">Code available on github at https://github.com/richienabuk/tic-tac-toe</string>
 </resources>

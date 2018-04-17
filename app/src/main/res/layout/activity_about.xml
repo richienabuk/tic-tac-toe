@@ -12,25 +12,23 @@
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textAppearance="?android:attr/textAppearanceMedium"
-    android:text="Developed by:\nRichie Nabuk \nFor ALC: Beginner Android Dev"
-    android:id="@+id/textView"
-    android:layout_centerVertical="true"
     android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="@string/creditText"
     android:textAlignment="center"
+    android:textAppearance="?android:attr/textAppearanceMedium"
     android:textColor="@color/colorPrimary"
     android:textSize="@dimen/title_text_size" />
 
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textAppearance="?android:attr/textAppearanceSmall"
-    android:text="Feel free to contribute on https://kodehauz.com"
-    android:id="@+id/textView2"
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
+    android:text="@string/creditButton"
     android:textAlignment="center"
+    android:textAppearance="?android:attr/textAppearanceSmall"
     android:textColor="@color/colorPrimary" />
 
 </RelativeLayout>

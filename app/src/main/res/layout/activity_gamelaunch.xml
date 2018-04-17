@@ -9,8 +9,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/padding_20"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/padding_20">
 
         <View
             android:id="@+id/top_space"
@@ -23,58 +23,62 @@
             android:id="@+id/player1title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/top_space"
             android:text="@string/ask_player1name_text"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/title_text_size"
-            android:layout_below="@+id/top_space"
             />
         <EditText
             android:id="@+id/player1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/player1title"
             android:layout_marginBottom="@dimen/title_text_size"
             android:backgroundTint="@color/color_hint"
             android:hint="@string/player1name_text_hint"
+            android:inputType="text"
+            android:maxLines="1"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_below="@+id/player1title"
             android:textColorHint="@color/color_hint"/>
         <TextView
             android:id="@+id/player2title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/player1"
             android:text="@string/ask_player2name_text"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_below="@+id/player1"
             android:textSize="@dimen/title_text_size"
             />
         <EditText
             android:id="@+id/player2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/player2title"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/color_hint"
-            android:layout_below="@+id/player2title"
             android:hint="@string/player2name_text_hint"
+            android:inputType="text"
+            android:maxLines="1"
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/color_hint"
             />
         <Button
-            android:id="@+id/botton_click"
+            android:id="@+id/button_click"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/player2"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:background="@color/colorPrimary"
             android:onClick="submitName"
+            android:padding="@dimen/padding_10"
             android:text="@string/playernames_submit_button"
             android:textColor="#ffffff"
-            android:layout_below="@+id/player2"
-            android:layout_centerHorizontal="true"
-            android:padding="@dimen/padding_10"
             android:textSize="@dimen/title_text_size"/>
         <View
             android:layout_width="match_parent"
-            android:layout_below="@+id/botton_click"
             android:layout_height="@dimen/spacing_view"
+            android:layout_below="@+id/button_click"
             android:background="@android:color/transparent">
         </View>
 

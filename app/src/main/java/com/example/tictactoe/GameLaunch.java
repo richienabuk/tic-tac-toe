@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 The Android Open Source Project
+ * Copyright 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,8 +32,8 @@ public class GameLaunch extends AppCompatActivity {
 
 
     public void submitName(View view) {
-        EditText p1 = (EditText) findViewById(R.id.player1);
-        EditText p2 = (EditText) findViewById(R.id.player2);
+        EditText p1 = findViewById(R.id.player1);
+        EditText p2 = findViewById(R.id.player2);
         String player1NameText = p1.getText().toString();
         String player2NameText = p2.getText().toString();
 
