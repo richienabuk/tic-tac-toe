@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
+    <string name="title_activity_about">About</string>
+    <string name="game_name">Tic Tac Toe Game</string>
+    <string name="play_button_text">Play</string>
+    <string name="ask_player1name_text">Enter the name of 1st Player:</string>
+    <string name="player1name_text_hint">Player 1</string>
+    <string name="ask_player2name_text">Enter the name of 2nd Player:</string>
+    <string name="player2name_text_hint">Player 2</string>
+    <string name="playernames_submit_button">Start Game</string>
+    <string name="restart_game">Restart Game</string>
+    <string name="blank_string" />
+    <string name="player_2_default_name">2nd Player</string>
+    <string name="player_1_default_name">1st Player</string>
 </resources>

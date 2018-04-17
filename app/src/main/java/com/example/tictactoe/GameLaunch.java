@@ -20,36 +20,38 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class GameLaunch extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_gamelaunch);
     }
 
-//     Launches the gamers view
-    public void GameLaunch(View view) {
-        Intent intent = new Intent(this,GameLaunch.class);
-        if(intent.resolveActivity(getPackageManager())!=null) {
-            startActivity(intent);
+
+    public void submitName(View view) {
+        EditText p1 = (EditText) findViewById(R.id.player1);
+        EditText p2 = (EditText) findViewById(R.id.player2);
+        String player1NameText = p1.getText().toString();
+        String player2NameText = p2.getText().toString();
+
+        if(player1NameText.equals("")){
+            player1NameText="1st Player";
+            p1.setText(R.string.player_1_default_name);
         }
-    }
-
-//         Launches the gamers view
-    public void HowTo(View view) {
-        Intent intent = new Intent(this,HowTo.class);
-        if(intent.resolveActivity(getPackageManager())!=null) {
-            startActivity(intent);
+        if(player2NameText.equals("")){
+            player2NameText="2nd Player";
+            p2.setText(R.string.player_2_default_name);
         }
-    }
-
-//     Launches the about developer view
-    public void About(View view) {
-        Intent intent = new Intent(this, About.class);
+        Intent intent = new Intent(this,Gamer.class);
+        intent.putExtra("1st Player",player1NameText);
+        intent.putExtra("2nd Player",player2NameText);
         if(intent.resolveActivity(getPackageManager())!=null){
             startActivity(intent);
+            finish();
         }
     }
+
 }
